@@ -1,0 +1,29 @@
+title: "Minhas Notas"
+description: "Notas técnicas e tutoriais pessoais"
+theme: minima
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      layout: page
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+exclude:
+  - README.md
+
+robots: noindex, nofollow
